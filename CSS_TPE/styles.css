@@ -1,104 +1,113 @@
-.contenedor {
-    /*border: solid black 1px;*/
+.contenedor {    
     display: flex;
-    margin-left: 15%;
-    justify-content: space-between;
-    position: fixed; top: 0;
-    width: 70%;
-    background-color: white;
-    visibility: inherit;
+    margin-left: 12%;
+    justify-content: flex-start;
+    position: fixed; 
+    top: 0;    
+    width: 100%;
+    max-width: 1860px;
+    background-color: white;    
+    border-radius: 15px;    
 }
-.logo {
-    /*border: solid black 1px;*/
-    align-items: flex-end;
-    height: 100px;
-    width: 33%;
-    display: flex;
-}
-.logo img{
-    height: 100px;
-    width: 200px;
-}
+    .contenedor .logo {align-items: flex-end;
+        height: 100px;
+        width: 33%;
+        display: flex;
+    }
+    .contenedor .logo img{
+        height: 100px;
+        width: 200px;
+    }
+        .contenedor .logo .banco{
+            position: absolute;
+            color: darkolivegreen;
+            margin-left: 120px;
+            padding-bottom: 5px;
+            font-size: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+    .contenedor .nave {
+        background-color: rgb(255, 255, 255);
+        margin: 0 20px 0 0;    
+        width: 66%;
+        max-width: 850px;
+        height: 20%;
+        border-radius: 10px;        
+        
+    }
+    .contenedor .nave ul{
+        display: flex;
+        justify-content: flex-end;                
+        
+    }
+        .contenedor .nave ul li{              
+            list-style: none;
+            text-align: center;            
+            margin-top: 20px;
+            font-size: 1.6rem;            
+            
+        }
+        .contenedor .nave li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            color: rgb(1, 34, 11);
+            text-decoration: none;
+        }
+        .contenedor .nave li a:hover {
+            background-color: rgb(161, 219, 169);
+            border-radius: 5px;
+            transition: all 0.4s linear;
+        }
 
-.banco{
-    /*border: solid black 1px;*/
-    position: absolute;
-    color: darkolivegreen;
-    margin-left: 120px;
-    padding-bottom: 5px;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-.nave {
-    background-color: rgb(18, 175, 18);
-    /*border: solid black 1px;*/
-    margin: 0 20px 0 0;    
-    width: 66%;
-    height: 100px;
-    border-radius: 10px;
-}
-.nave ul{
-    display: flex;
-    justify-content: flex-end;
-    font-size: 35px; 
-    
-    
-}
-.nave ul li{
-    color: azure;    
-    list-style: none;
-    text-align: center;
-    
-     
-}
-.cuerpo{    
+.cuerpo{ 
+      
     height: 900px;
     width: 100%;
-    margin-top: 150px;     
+    margin-top: 150px;
+         
 }
-.imagen{
-    /*border: solid black 1px;*/
-    position: relative;
-    height: 66%;
-    color: rgb(4, 105, 18);
-    text-align: center; 
-            
-}
-.imagen img{
-    height: 100%;
-    width: 70%;
-    border-radius: 15px;    
-    opacity: 0.7;
-}
-.texto {
-    /*border: solid black 1px;*/
-    position: absolute;
-    line-height: 50px;
-    top: 100px;
-    left: 800px;
-    font-size: 60px;          
-    /*background-color: rgb(121, 120, 120);
-    opacity: 0.5;
-    border-radius: 25px;*/   
-}
-.productos_personas{
-    /*border: solid black 1px;*/
-    background-color: rgb(139, 139, 139);
-    height: 250%;   
-}
-.btn{
-    font-size: 25px;
-    background-color: rgb(4, 177, 4);
-    color: azure;
-    border-radius: 5px;
-}
-.fuente{
-    font-size: 35px;
+    .cuerpo .imagen{        
+        height: 66%;
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 15px;          
 
-}
-li {
-    /*border: solid black 1px;*/
-    padding: 5px;
-    margin: 5px;
-}
+        background-image: url(../images/familia4.PNG); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+         
+            
+    }
+
+        .cuerpo .imagen .btn {
+            display: block;
+            margin: auto;
+            background-color: rgb(5, 173, 5);
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;    
+
+        }
+        .cuerpo .imagen .btn:hover {
+            background-color: rgb(1, 53, 10);
+            
+        }
+
+        .cuerpo .imagen .h{
+
+            color: rgb(4, 105, 18);
+            text-align: center;
+            font-size: xx-large;             
+
+        }
+       
+        
+    .cuerpo .productos_personas{
+        /*border: solid black 1px;*/
+        background-color: darkolivegreen;       
+        height: 250%; 
+       
+
+    }
+
