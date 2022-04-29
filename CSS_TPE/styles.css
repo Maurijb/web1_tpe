@@ -1,6 +1,6 @@
 .contenedor {    
     display: flex;
-    margin-left: 12%;
+    margin-left: 24%;
     justify-content: flex-start;
     position: fixed; 
     top: 0;    
@@ -9,9 +9,10 @@
     background-color: white;    
     border-radius: 15px;    
 }
-    .contenedor .logo {align-items: flex-end;
+    .contenedor .logo {
+        align-items: flex-end;
         height: 100px;
-        width: 33%;
+        width: 30%;
         display: flex;
     }
     .contenedor .logo img{
@@ -21,15 +22,15 @@
         .contenedor .logo .banco{
             position: absolute;
             color: darkolivegreen;
-            margin-left: 120px;
+            margin-left: 7%;
             padding-bottom: 5px;
             font-size: 100%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          }
     .contenedor .nave {
         background-color: rgb(255, 255, 255);
-        margin: 0 20px 0 0;    
-        width: 66%;
+        margin: 0;    
+        width: 33%;
         max-width: 850px;
         height: 20%;
         border-radius: 10px;        
@@ -37,7 +38,8 @@
     }
     .contenedor .nave ul{
         display: flex;
-        justify-content: flex-end;                
+        justify-content: flex-end;
+        flex-wrap: wrap;                
         
     }
         .contenedor .nave ul li{              
@@ -61,15 +63,15 @@
 
 .cuerpo{ 
       
-    height: 900px;
+    height: 100%;
     width: 100%;
     margin-top: 150px;
          
 }
     .cuerpo .imagen{        
-        height: 66%;
-        width: 70%;
-        margin-left: 15%;
+        height: 30rem;
+        width: 50%;
+        margin-left: 25%;
         border-radius: 15px;          
 
         background-image: url(../images/familia4.PNG); 
@@ -83,14 +85,14 @@
         .cuerpo .imagen .btn {
             display: block;
             margin: auto;
-            background-color: rgb(5, 173, 5);
+            background-color: rgba(5, 173, 5, 0.644);
             color: white;
             font-size: 1.2em;
             border-radius: 5px;    
 
         }
         .cuerpo .imagen .btn:hover {
-            background-color: rgb(1, 53, 10);
+            background-color: rgba(19, 112, 35, 0.856);
             
         }
 
@@ -103,11 +105,100 @@
         }
        
         
-    .cuerpo .productos_personas{
-        /*border: solid black 1px;*/
-        background-color: darkolivegreen;       
-        height: 250%; 
+    .cuerpo .productos{
+        
+        border-top: solid green 4px;
+        border-radius: 20px;
+        height: 50rem;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        background-color: white; 
+        box-sizing: content-box;   
+         
        
 
     }
+        .cuerpo .subtitle{
+            border-bottom: solid green 4px;            
+            font-size: 1.5em;
+            text-align: start;
+            color: rgb(2, 71, 2);
+            width: 50%;
+            height: 7%;
+            margin-left: 25%;
+
+        }
+        .productos .personas{
+            
+           
+            margin: 2px;
+            height: 8rem;
+            width: 14rem;
+            font-size: 2em;
+            line-height: 3ex;            
+            text-align: center;
+            
+               
+        }
+        .productos .personas a img:hover{
+            width: 70%;
+
+        }
+            .productos .personas h5 {
+               
+                width: 14rem;
+                text-align: center;
+            }
+            .personas img{               
+                width: 60%;
+
+            }
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+    height: 40rem;
+}
+    
+    
+        .pie ul li{
+            list-style: none;
+            color: white;
+            font-size: 1.5em;
+            line-height: 1.2em;
+            
+
+        }
+
+        .ayuda, .conocenos, .infolegal{
+           
+            width: 15%;
+            margin-top: 10px;
+            height: 50%;
+        }
+
+        .redes{
+            width: 60%;
+            margin-left: 15%;
+            text-align: start;
+        }
+
+        .redes img{
+            width: 3%;
+            border-radius: 7px;
+            margin: 5px;
+        }
+        .terminos{
+            width: 60%;
+            margin-left: 15%;
+            text-align: start;
+
+        }
 
