@@ -1,204 +1,344 @@
-.contenedor {    
+* {
+    margin: 0px;    
+}
+
+/* Estilos del navegador del sitio Web
+----------------------------*/
+
+.contenedor {       
     display: flex;
-    margin-left: 24%;
-    justify-content: flex-start;
+    margin-left: 14%;
+    justify-content: space-between;
     position: fixed; 
     top: 0;    
-    width: 100%;
+    width: 60%;
     max-width: 1860px;
     background-color: white;    
     border-radius: 15px;    
 }
+
     .contenedor .logo {
+        display: block;
         align-items: flex-end;
         height: 100px;
         width: 30%;
         display: flex;
     }
-    .contenedor .logo img{
+
+    .contenedor .logo img{        
         height: 100px;
         width: 200px;
     }
-        .contenedor .logo .banco{
-            position: absolute;
-            color: darkolivegreen;
-            margin-left: 7%;
-            padding-bottom: 5px;
-            font-size: 100%;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-         }
-    .contenedor .nave {
+        
+    .contenedor .nave {        
         background-color: rgb(255, 255, 255);
         margin: 0;    
-        width: 33%;
+        width: 50%;
         max-width: 850px;
-        height: 20%;
-        border-radius: 10px;        
-        
+        border-radius: 10px;         
     }
+
     .contenedor .nave ul{
         display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;                
-        
+        justify-content: center;
+        flex-wrap: wrap;         
     }
+
         .contenedor .nave ul li{              
             list-style: none;
             text-align: center;            
             margin-top: 20px;
-            font-size: 1.6rem;            
-            
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 18px;           
         }
+
         .contenedor .nave li a{
             display: block;
             padding: 0.5rem 1rem;
             color: rgb(1, 34, 11);
             text-decoration: none;
         }
+
         .contenedor .nave li a:hover {
             background-color: rgb(161, 219, 169);
             border-radius: 5px;
             transition: all 0.4s linear;
         }
 
-.cuerpo{ 
-      
+.cuerpo{       
     height: 100%;
     width: 100%;
-    margin-top: 150px;
-         
+    margin-top: 150px;         
 }
-    .cuerpo .imagen{        
-        height: 30rem;
-        width: 50%;
-        margin-left: 25%;
-        border-radius: 15px;          
 
-        background-image: url(../images/familia4.PNG); 
+/* Contenedor general que contiene los dos bloques del Index (dos imégenes)
+-----------------------------------------------------------------------*/
+
+.visualcontainer{
+    margin-left: 14%;
+    width: 55%;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+    .visualcontainer .imagenPortada1{
+        background-image: url(../images/fachadabanco.jpg);
+    }
+    .visualcontainer .imagenPortada2{
+        background-image: url(../images/parejafeliz.jpg);
+    }
+
+    .visualcontainer .imagenPortada1, .imagenPortada2{    
+        width: 100%;
+        height: 40rem;        
         background-position: center;
         background-repeat: no-repeat; 
-        background-size: cover;
-         
-            
+        background-size: cover;                
     }
 
-        .cuerpo .imagen .btn {
-            display: block;
-            margin: auto;
-            background-color: rgba(5, 173, 5, 0.644);
+/* Texto sobre las imágenes del Index
+-----------------------------------------------------------------------*/  
+
+        .parrafo1, .parrafo2{
+            display: flex;
+            justify-content: center;
+            background-color: green;
             color: white;
-            font-size: 1.2em;
-            border-radius: 5px;    
-
-        }
-        .cuerpo .imagen .btn:hover {
-            background-color: rgba(19, 112, 35, 0.856);
-            
+            margin: 0px;
+            font-size: 2em ;                   
         }
 
-        .cuerpo .imagen .h{
-
-            color: rgb(4, 105, 18);
-            text-align: center;
-            font-size: xx-large;             
-
+        .parrafo1{
+            border-bottom-left-radius: 10px;
         }
-       
-        
-    .cuerpo .productos{
-        
-        border-top: solid green 4px;
-        border-radius: 20px;
-        height: 50rem;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 5px;
-        padding-top: 10px;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        background-color: white; 
-        box-sizing: content-box;   
-         
-       
+        .parrafo2{
+            border-bottom-right-radius: 10px;
+        }
+
+        .parrafo2-1{
+                display: flex;
+                justify-content: center;        
+                color: black;
+                margin: 20px;                
+        }  
+
+/* Tabla con cotización de divisas
+-----------------------------------------------------------------------*/ 
+
+.content{
+width: 55%;
+margin-left: 14%;
+margin-top: 10px;
+margin-bottom: 10px;
+justify-content: center;
+}
+
+table, td, tr {
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+}
+
+table th{
+background-color: green;
+color: white;
+width: 25%;
+text-align: center;
+}
+
+.ver{
+color: green;
+}
+.roj{
+color: red;
+}
+
+/*Imagen, botón y texto en Personas.html
+-------------------------------------------------------------------------------*/
+
+.cuerpo .imagen{
+    background-image: url(../images/familia4.jpg); 
+}
+
+    .cuerpo .imagen .btn {
+        display: block;
+        margin: auto;
+        background-color: rgba(5, 173, 5, 0.644);
+        color: white;
+        font-size: 1.2em;
+        border-radius: 5px;    
 
     }
-        .cuerpo .subtitle{
-            border-bottom: solid green 4px;            
-            font-size: 1.5em;
-            text-align: start;
-            color: rgb(2, 71, 2);
-            width: 50%;
-            height: 7%;
-            margin-left: 25%;
+    .cuerpo .imagen .btn:hover {
+        background-color: rgba(19, 112, 35, 0.856);
+        
+    }
+    .cuerpo .imagen .h{
+        color: rgb(4, 105, 18);
+        text-align: center;
+        font-size: xx-large; 
+    }
 
-        }
-        .productos .personas{
-            
-           
-            margin: 2px;
-            height: 8rem;
+/*Imagen, botón, texto en Empresas.html
+-------------------------------------------------------------------------------*/
+
+.cuerpo .imagen-e{
+    background-image: url(../images/oficina.jpg);  
+}
+
+    .cuerpo .imagen-e .btn {
+        display: block;
+        margin: auto;
+        background-color: rgba(218, 82, 3, 0.644);
+        color: white;
+        font-size: 1.2em;
+        border-radius: 5px; 
+    }
+
+    .cuerpo .imagen-e .btn:hover {
+        background-color: rgba(133, 82, 34, 0.911);        
+    }
+
+    .cuerpo .imagen-e .h{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: xx-large;
+    }
+
+/* Formato imagen central común para Personas y Empresas
+-------------------------------------------------------------------------------*/
+
+.cuerpo .imagen, .imagen-e{        
+    width: 55%;
+    height: 30em;
+    margin-left: 15%;
+    border-radius: 15px;  
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;             
+}      
+
+/* Imagenes y texto sección de productos para Personas y Empresas
+-------------------------------------------------------------------------------*/ 
+
+.cuerpo .productos{        
+    border-top: solid green 4px;
+    border-radius: 20px;
+    height: 30rem;
+    width: 55%;
+    margin-left: 15%;
+    margin-top: 5px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white; 
+    box-sizing: content-box;   
+}
+
+.cuerpo .subtitle{
+    border-bottom: solid green 4px;            
+    font-size: 1em;
+    text-align: start;
+    color: rgb(2, 71, 2);
+    width: 55%;
+    height: 7%;
+    margin-left: 15%;
+}
+
+    .productos .img-productos{            
+        margin-right: 8px;
+        height: 8rem;
+        width: 14rem;  
+        text-align: center;                
+    }
+
+    .productos .img-productos a img:hover{
+        height: 90%;
+        width: 70%;
+    }
+
+        .productos .img-productos h5 {
+            font-size: 1.1em;
             width: 14rem;
-            font-size: 2em;
             line-height: 3ex;            
             text-align: center;
-            
-               
+            margin-top: 10px;               
         }
-        .productos .personas a img:hover{
-            width: 70%;
 
+        .img-productos img{ 
+            width: 60%;
+            height: 80%;
         }
-            .productos .personas h5 {
-               
-                width: 14rem;
-                text-align: center;
-            }
-            .personas img{               
-                width: 60%;
 
-            }
+/* Formulario para solicitar Turnos Web
+-------------------------------------------------------------------------------*/
+
+.contenedor-form{
+    border-radius: 10px;   
+    color: white;
+    width: 55%;
+    margin-left: 14%;
+    margin-top: 150px;
+    border: solid;
+    text-align: center;
+    background-color: rgb(3, 46, 16);    
+}
+
+/* FOOTER
+---------------------------------------------------------------------------*/
+
 .pie{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: darkgrey;
-    height: 40rem;
+    padding-right: 15%;
+    background-color: rgb(56, 56, 56);
+    height: 25rem;
 }
-    
-    
+
         .pie ul li{
             list-style: none;
             color: white;
-            font-size: 1.5em;
+            font-size: 1em;
             line-height: 1.2em;
-            
-
         }
 
-        .ayuda, .conocenos, .infolegal{
-           
+        .pie ul li:hover{
+            background-color: gray;
+        }
+
+        .ayuda, .conocenos, .infolegal{           
             width: 15%;
             margin-top: 10px;
             height: 50%;
         }
 
-        .redes{
+        .pie .lista-head{
+            color: black;
+            font-size: 2em;
+            line-height: 1.2em;
+        }
+
+        .redes{            
             width: 60%;
             margin-left: 15%;
-            text-align: start;
+            text-align: start;            
         }
 
         .redes img{
             width: 3%;
             border-radius: 7px;
-            margin: 5px;
+            margin: 5px;           
         }
-        .terminos{
-            width: 60%;
-            margin-left: 15%;
-            text-align: start;
 
+        .terminos{            
+            width: 60%;
+            text-align: center;
         }
+
+
 
