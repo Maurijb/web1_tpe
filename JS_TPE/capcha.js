@@ -22,12 +22,12 @@ function GenerarCaptcha() {
 /* Función que comprueba que el resultado sea la suma de los dos valores generados */
 function ValidarCaptcha() {
 	if (document.getElementById("ResultadoCaptcha").value == (Valor1 + Valor2)) {
-		document.getElementById("resultado").innerText = "Captcha validado";
+		document.getElementById("resultado").innerText = "Turno generado con exito!";
 		GenerarCaptcha();
 	}
 	else {
         
-		document.getElementById("resultado").innerText = "Captcha NO validado. Intenta de nuevo";
+		document.getElementById("resultado").innerText = "ERROR en la validación. Intente de nuevo";		
 	}
 }
 
